@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  data: Object;
+  
+  constructor() {
+    this.data = {
+      chart: { },
+      data: [
+        {value: 500},
+        {value: 600},
+        {value: 700}
+      ]
+    };
+  }
 }
+
