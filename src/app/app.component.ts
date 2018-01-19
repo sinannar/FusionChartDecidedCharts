@@ -9,6 +9,8 @@ export class AppComponent {
   data: Object;
   pie2d_data:Object;
   doughnut2d_data:Object;
+  pie_data:Object;
+  doughnut_data:Object;
 
   
   constructor() {
@@ -27,7 +29,7 @@ export class AppComponent {
 
     */ 
 
-    this.pie2d_data = {
+    this.pie_data = {
       "chart": {
           "caption": "Split of revenue by product categories",
           "subCaption": "Last year",
@@ -56,7 +58,7 @@ export class AppComponent {
       }]
     };
 
-    this.doughnut2d_data = {
+    this.doughnut_data = {
       "chart": {
         "caption": "Split of Revenue by Product Categories",
         "subCaption": "Los Angeles Topanga - Last month",
