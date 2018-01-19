@@ -10,7 +10,11 @@ export class AppComponent {
   pie_data:Object;
   doughnut_data:Object;
   column_data:Object
+  line_data:Object
+  ms_column_data:Object
+  ms_line_data:Object
   
+
   constructor() {
     this.data = {
       chart: { },
@@ -138,6 +142,314 @@ export class AppComponent {
           }
       ]
   }
+
+  this.line_data = {
+    "chart": {
+        "caption": "Website Visitors",
+        "subCaption": "Last week",
+        "xAxisName": "Day",
+        "yAxisName": "Visitors",
+        "anchorRadius": "5",
+        "showValues": "0",
+        "theme": "fint"
+    },
+    "data": [
+        {
+            "label": "Mon",
+            "value": "5123"
+        },
+        {
+            "label": "Tue",
+            "value": "4233"
+        },
+        {
+            "label": "Wed",
+            "value": "5507"
+        },
+        {
+            "label": "Thu",
+            "value": "4110"
+        },
+        {
+            "label": "Fri",
+            "value": "5529"
+        },
+        {
+            "label": "Sat",
+            "value": "5803"
+        },
+        {
+            "label": "Sun",
+            "value": "6202"
+        }
+    ],
+    "trendlines": [
+        {
+            "line": [
+                {
+                    "startvalue": "4400",
+                    "endValue": "6000",
+                    "color": "#1aaf5d",
+                    "valueOnRight": "1",
+                    "dashed": "1",
+                    "displayvalue": "Trend"
+                },
+                
+            ]
+        }
+    ]
+    };
+
+
+    this.ms_column_data = {
+        "chart": {
+            "caption": "Comparison of Quarterly Revenue",
+            "xAxisname": "Quarter",
+            "yAxisName": "Revenues (In USD)",
+            "numberPrefix": "$",
+            "plotFillAlpha": "80",
+            "paletteColors": "#0075c2,#1aaf5d",
+            "baseFontColor": "#333333",
+            "baseFont": "Helvetica Neue,Arial",
+            "captionFontSize": "14",
+            "subcaptionFontSize": "14",
+            "subcaptionFontBold": "0",
+            "showBorder": "0",
+            "bgColor": "#ffffff",
+            "showShadow": "0",
+            "canvasBgColor": "#ffffff",
+            "canvasBorderAlpha": "0",
+            "divlineAlpha": "100",
+            "divlineColor": "#999999",
+            "divlineThickness": "1",
+            "divLineIsDashed": "1",
+            "divLineDashLen": "1",
+            "divLineGapLen": "1",
+            "usePlotGradientColor": "0",
+            "showplotborder": "0",
+            "valueFontColor": "#ffffff",
+            "placeValuesInside": "1",
+            "showHoverEffect": "1",
+            "rotateValues": "1",
+            "showXAxisLine": "1",
+            "xAxisLineThickness": "1",
+            "xAxisLineColor": "#999999",
+            "showAlternateHGridColor": "0",
+            "legendBgAlpha": "0",
+            "legendBorderAlpha": "0",
+            "legendShadow": "0",
+            "legendItemFontSize": "10",
+            "legendItemFontColor": "#666666"
+        },
+        "categories": [
+            {
+                "category": [
+                    {
+                        "label": "Q1"
+                    },
+                    {
+                        "label": "Q2"
+                    },
+                    {
+                        "label": "Q3"
+                    },
+                    {
+                        "label": "Q4"
+                    }
+                ]
+            }
+        ],
+        "dataset": [
+            {
+                "seriesname": "Previous Year",
+                "data": [
+                    {
+                        "value": "10000"
+                    },
+                    {
+                        "value": "11500"
+                    },
+                    {
+                        "value": "12500"
+                    },
+                    {
+                        "value": "15000"
+                    }
+                ]
+            },
+            {
+                "seriesname": "Current Year",
+                "data": [
+                    {
+                        "value": "25400"
+                    },
+                    {
+                        "value": "29800"
+                    },
+                    {
+                        "value": "21800"
+                    },
+                    {
+                        "value": "26800"
+                    }
+                ]
+            }
+        ],
+        "trendlines": [
+            {
+                "line": [
+                    {
+                        "startvalue": "12250",
+                        "color": "#0075c2",
+                        "displayvalue": "Previous{br}Average",
+                        "valueOnRight": "1",
+                        "thickness": "1",
+                        "showBelow": "1",
+                        "tooltext": "Previous year quarterly target  : $13.5K"
+                    },
+                    {
+                        "startvalue": "25950",
+                        "color": "#1aaf5d",
+                        "displayvalue": "Current{br}Average",
+                        "valueOnRight": "1",
+                        "thickness": "1",
+                        "showBelow": "1",
+                        "tooltext": "Current year quarterly target  : $23K"
+                    }
+                ]
+            }
+        ]
+    };
+
+
+    this.ms_line_data = {
+        "chart": {
+            "caption": "Number of visitors last week",
+            "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+            "captionFontSize": "14",
+            "subcaptionFontSize": "14",
+            "subcaptionFontBold": "0",
+            "paletteColors": "#0075c2,#1aaf5d",
+            "bgcolor": "#ffffff",
+            "showBorder": "0",
+            "showShadow": "0",
+            "showCanvasBorder": "0",
+            "usePlotGradientColor": "0",
+            "legendBorderAlpha": "0",
+            "legendShadow": "0",
+            "showAxisLines": "0",
+            "showAlternateHGridColor": "0",
+            "divlineThickness": "1",
+            "divLineIsDashed": "1",
+            "divLineDashLen": "1",
+            "divLineGapLen": "1",
+            "xAxisName": "Day",
+            "showValues": "0"
+        },
+        "categories": [
+            {
+                "category": [
+                    {
+                        "label": "Mon"
+                    },
+                    {
+                        "label": "Tue"
+                    },
+                    {
+                        "label": "Wed"
+                    },
+                    {
+                        "vline": "true",
+                        "lineposition": "0",
+                        "color": "#6baa01",
+                        "labelHAlign": "center",
+                        "labelPosition": "0",
+                        "label": "National holiday",
+                        "dashed": "1"
+                    },
+                    {
+                        "label": "Thu"
+                    },
+                    {
+                        "label": "Fri"
+                    },
+                    {
+                        "label": "Sat"
+                    },
+                    {
+                        "label": "Sun"
+                    }
+                ]
+            }
+        ],
+        "dataset": [
+            {
+                "seriesname": "Bakersfield Central",
+                "data": [
+                    {
+                        "value": "15123"
+                    },
+                    {
+                        "value": "14233"
+                    },
+                    {
+                        "value": "25507"
+                    },
+                    {
+                        "value": "9110"
+                    },
+                    {
+                        "value": "15529"
+                    },
+                    {
+                        "value": "20803"
+                    },
+                    {
+                        "value": "19202"
+                    }
+                ]
+            },
+            {
+                "seriesname": "Los Angeles Topanga",
+                "data": [
+                    {
+                        "value": "13400"
+                    },
+                    {
+                        "value": "12800"
+                    },
+                    {
+                        "value": "22800"
+                    },
+                    {
+                        "value": "12400"
+                    },
+                    {
+                        "value": "15800"
+                    },
+                    {
+                        "value": "19800"
+                    },
+                    {
+                        "value": "21800"
+                    }
+                ]
+            }
+        ],
+        "trendlines": [
+            {
+                "line": [
+                    {
+                        "startvalue": "17022",
+                        "color": "#6baa01",
+                        "valueOnRight": "1",
+                        "displayvalue": "Average"
+                    }
+                ]
+            }
+        ]
+    };
+
 
 
 
