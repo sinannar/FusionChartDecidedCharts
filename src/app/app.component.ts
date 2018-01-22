@@ -16,6 +16,8 @@ export class AppComponent {
   mscombidy2d_data:Object;
   bar_data:Object;
 
+  array_string = ['a1','a2','a3','a4','a5']
+
   constructor() {
     this.data = {
       chart: { },

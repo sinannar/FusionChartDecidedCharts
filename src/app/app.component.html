@@ -1,15 +1,18 @@
 <h1>DEMO</h1>
-<p>
-  <fusioncharts
-  width="400" 
-  height="200"
-  type="column2d"
-  dataFormat="json"
-  [dataSource]="data" >
-  </fusioncharts>
-</p>
+    <div *ngFor="let item of array_string">
+        <fusioncharts
+            id="{{item}}"
+            width="400" 
+            height="200"
+            type="column2d"
+            dataFormat="json"
+            [dataSource]="data" >
+        </fusioncharts>
+    </div>    
 <br>
 
+
+<!-- 
 <h1>DEMO PIE 2D</h1>
 <p>    
     <fusioncharts
@@ -159,4 +162,4 @@
     [dataSource]="mscombidy2d_data" >
     </fusioncharts>
 </p>
-<br>
+<br> -->
